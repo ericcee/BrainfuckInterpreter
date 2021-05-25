@@ -15,7 +15,7 @@ namespace BrainfuckInterpreter
             bfi.Run();
             TimeSpan ts = DateTime.Now - lprev; 
 
-            Console.WriteLine($"\nExecution Time: {Math.Floor(ts.TotalSeconds)}.{ts.Milliseconds}s");
+            Console.WriteLine($"\nExecution Time: {ts.TotalSeconds}s");
             Console.ReadLine();
         }
     }
