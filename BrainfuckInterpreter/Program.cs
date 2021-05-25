@@ -10,12 +10,12 @@ namespace BrainfuckInterpreter
             Console.Write("BF: File to load> ");
             string file = Console.ReadLine();
             byte[] code = File.ReadAllBytes(file);
-            BFIntepreter bfi = new BFIntepreter(code, 1024 * 1024 * 1024 );
+            BFIntepreter bfi = new BFIntepreter(code, 1024 * 1024 );
             DateTime lprev = DateTime.Now;
             bfi.Run();
             TimeSpan ts = DateTime.Now - lprev; 
 
-            Console.WriteLine($"\nExcecution Time: {ts.TotalMilliseconds}ms");
+            Console.WriteLine($"\nExecution Time: {ts.TotalMilliseconds}ms");
             Console.ReadLine();
         }
     }
