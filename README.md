@@ -1,3 +1,3 @@
 # BrainfuckInterpreter
 
-A very simple Brainfuck Interpreter written in C#.
+Simple Brainfuck Interpreter written in C#.
